@@ -46,7 +46,7 @@ public class Geocode{
             String temp_json = response.body(); 
 
             //parse response into JSON if the response isn't empty. 
-            if(!temp_json.equals("[]")){
+            if(!temp_json.equals("[ ]")){
                 String json = temp_json.substring(1, temp_json.length() - 1); 
                 JSONObject obj = new JSONObject(json);
 
